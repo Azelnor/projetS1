@@ -1,0 +1,12 @@
+body>header>h1 {
+    text-align: center;
+}
+
+body>header>img {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 10px;
+}
+
+
