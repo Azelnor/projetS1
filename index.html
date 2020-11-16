@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="./css/mescss/menu.css">
     <link rel="stylesheet" href="./css/mescss/Mise-en-page.css">
+    <link rel="stylesheet" href="./css/mescss/typography.css">
+    <script type="module" src="https://dev.jspm.io/elix/define/Carousel.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,9 +12,10 @@
     <title>Accueil</title>
 </head>
     <body>
+
         <header>
-            <h1>E-State</h1>
-            <img src="./img/logo.png" alt="logo site">
+                <h1>E-State</h1>
+                <img src="./img/logo.png" alt="logo site">
 
             <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
                 <div class="nav-toggle-bar"></div>
@@ -33,10 +36,18 @@
         <main>
 
             <h1>Be protect, <span>Be clean</span></h1>
+            <div class="carousel">
+                <elix-carousel>
+                    <img src="./img/conf.jpg" alt="">
+                    <img src="./img/snowden.jpg" alt="">
+                    <img src="./img/pollution.jpg" alt="">
+                </elix-carousel>
+            </div>
+            <div class="presentation">
+                <p>Bienvenue sur E-State, découvrez la face cachée des réseaux sous un angle inédit : la pollution numérique des états. </p>
+            </div>
 
-            <p>Bienvenue sur E-State, découvrez la face cachée des réseaux sous un angle inédit : la pollution numérique des états. </p>
-
-            <p>    Depuis la création d’internet dans les
+            <p class="intro">    Depuis la création d’internet dans les
                 années 60, les modes de
                 communications, de travail, de détente
                 se son multiplié. Chaque jour nous
@@ -62,6 +73,49 @@
                 nous aurons comme base de réflexion
                 le film de Oliver Stone, Snowden.
             </p>
+
+            <div class="articles">
+                <h2 id="article1">Une histoire</h2>
+                <img src="./img/A1.jpg" alt="">
+                <p><a href="article1.html">Snowden met en évidence la surveillance de masse, il est qualifié de lanceur d’alerte, il met sa vie en danger pour ouvrir les yeux du monde entier…</a></p>
+
+                <h2 id="article2">Un problème</h2>
+                <img src="./img/A2.jpg" alt="">
+                <p><a href="article2.html">La surveillance de masse ? Cela ne s’arrête juste à ce problème, mais va plus loin car qui dit grands objectifs dit grands moyens et consommation sans mesures…</a></p>
+                
+                <h2 id="article3">Des solutions</h2>
+                <img src="./img/A3.jpg" alt="">
+                <p><a href="article3.html">Pour vaincre la pollution numérique, il faut réfléchir à ce dont on a vraiment besoin, prendre les moyens pour baisser toujours plus notre empreinte carbone…</a></p>
+            </div>
+
+            <p id="fin">Bonne lecture !</p>
         </main>
+
+        <footer>
+            <div class="colonnes-footer">
+                <div class="col colonne1">
+                    <img src="./img/LOGO.png" alt="">
+                    <p id="footer">E-State</p>
+                    <p>Comprenez l'enjeu et vivez en conséquence.</p>
+                    <p>2020</p>
+                </div>
+                <div class="col colonne2">
+                    <p>Haut de page</p>
+                    <p>Accueil</p>
+                    <p>A propos</p>
+                    <p>Autres projets</p>
+                </div>
+                <div class="col colonne3">
+                    <img src="./img/logo-mmi.png" alt="">
+                    <p>MMI Montbéliard</p>
+                </div>
+            </div>
+            <div class="contact">
+                <img src="./img/logo%20linkedin.png" alt="">
+                <img src="./img/logo%20FB.png" alt="">
+                <img src="./img/logo%20IG.png" alt="">
+            </div>
+                <p>Site réalisé dans le cadre du projet personnel de S1</p>
+        </footer>
     </body>
 </html>
