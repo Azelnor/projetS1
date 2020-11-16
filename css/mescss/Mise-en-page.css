@@ -1,12 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
 body>header>h1 {
     text-align: center;
+    color: #f2f2f2;
 }
 
 body>header>img {
     position: absolute;
-    width: 100px;
-    height: 80px;
+    width: 70px;
+    height: 50px;
     top: 10px;
 }
 
+body>header{
+    background-color: #22465D;
+    height: 60px;
+    position: relative;
+    top: -22px;
+}
 
+/*accueil*/
+
+main>h1 {
+    display: block;
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+main>h1>span {
+    position: relative;
+    top: 30px;
+    margin-right: auto;
+}
+
+.carousel {
+    text-align: center;
+    margin: 50px;
+    margin-top: 100px;
+    z-index: -2;
+}
+
+elix-carousel>img {
+    width: 120px;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+main>img {
+    width: 350px;
+    height: 300px;
+    padding: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.presentation>p {
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.presentation {
+    background-color: #081B26;
+    height: 70px;
+    color: #F2F2F2;
+    z-index: -2;
+}
+
+
+.intro {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+
+.articles>img{
+    width: 150px;
+}
+
+p>a {
+    text-decoration:  none;
+    color: black;
+}
+
+.articles{
+    text-align: center;
+}
+
+#fin {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #22465D;
+    color: #f2f2f2;
+    font-size: 12px;
+}
+
+.colonnes-footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    width: 33%;
+}
+
+.colonne1>img {
+    width: 50px;
+    float: left;
+}
+
+.colonne3>img {
+    width: 50px;
+}
+
+
+.contact {
+    text-align: center;
+    margin: 20px;
+}
+
+footer>p {
+    text-align: center;
+}
+
+/*Article1*/
+
+.article1>h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.article1>img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article1>p {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
