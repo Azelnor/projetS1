@@ -27,6 +27,7 @@ body>header{
 /*accueil*/
 
 main>h1 {
+    color: #f2f2f2;
     display: block;
     position: relative;
     text-align: center;
@@ -51,9 +52,6 @@ elix-carousel>img {
     width: 120px;
 }
 
-body {
-    background-color: #f2f2f2;
-}
 
 main>img {
     width: 350px;
@@ -66,6 +64,8 @@ main>img {
     margin-right: auto;
 
 }
+
+
 
 .presentation>p {
     text-align: center;
@@ -84,14 +84,21 @@ main>img {
 
 
 .intro {
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 40px;
     text-align: justify;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.articles>img{
+.articles>li>a>img{
     width: 150px;
+}
+
+.articles>li{
+    list-style: none;
 }
 
 p>a {
@@ -100,8 +107,11 @@ p>a {
 }
 
 .articles{
-    text-align: justify;
-    margin: 20px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .articles>img {
@@ -117,6 +127,16 @@ p>a {
 #fin {
     text-align: center;
     margin-top: 100px;
+}
+
+.article1,.article2,.article3,.galerie,.propos,.autres{
+    background-image: url("../../img/Web 1920 – 1.png");
+}
+
+.index{
+    background-image: url("../../img/Accueil – 1.png");
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 /*footer*/
@@ -186,9 +206,11 @@ figcaption {
 }
 
 .article1>p, .article2>p, .article3>p{
-    margin-right: 10px;
-    margin-left: 10px;
     text-align: justify;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 blockquote {
