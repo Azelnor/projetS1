@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Roboto, Montserrat;
+    src: url("https://fonts.google.com/specimen/Roboto?query=ro");
+    src: url("https://fonts.google.com/specimen/Montserrat?query=mont");
+}
+
+h1,h2,h3,h4 {
+    font-family: "Roboto";
+}
+
+p {
+    font-family: Montserrat;
+}
+
+blockquote {
+    font-family: Montserrat;
+    font-size: 20px;
+}

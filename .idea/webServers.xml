@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a5e2faea-26f5-43d0-bfaf-028fada091b9" name="projets1">
+        <fileTransfer rootFolder="/home/clients/7e8d12fb2283c4fed233ce25a6de866b" accessType="SFTP" host="hh4h2.ftp.infomaniak.com" port="22" sshConfigId="f5abda89-b13f-4998-a806-9444c4ffd064" sshConfig="hh4h2_benclaude@hh4h2.ftp.infomaniak.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
