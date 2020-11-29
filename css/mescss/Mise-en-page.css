@@ -50,6 +50,7 @@ main>h1>span {
 
 elix-carousel>img {
     width: 120px;
+    margin-top: 50px;
 }
 
 
@@ -139,12 +140,22 @@ p>a {
     background-position: center top;
 }
 
+.article1>p>strong>a,.article2>p>strong>a,.article3>p>strong>a{
+    text-decoration: none;
+    color: #081B26;
+}
+
+.article1>p>strong>a:hover,.article2>p>strong>a:hover,.article3>p>strong>a:hover{
+    background-color: #22465D;
+}
+
 /*footer*/
 
 footer {
     background-color: #22465D;
     color: #f2f2f2;
     font-size: 12px;
+    margin-bottom: -50px;
 }
 
 .colonnes-footer {
@@ -162,7 +173,7 @@ footer {
     float: left;
 }
 
-.colonne3>img {
+.colonne3>a>img {
     width: 50px;
 }
 
@@ -174,6 +185,14 @@ footer {
 
 footer>p {
     text-align: center;
+}
+
+footer>div>div>p>a{
+    color: #f2f2f2;
+}
+
+footer>div>div>p>a:hover{
+    background-color: gray;
 }
 
 /*Article*/
@@ -344,6 +363,24 @@ li.carousel-items {
     background-color: #931506;
 }
 
+
+.autres>h1{
+    text-align: center;
+    margin: 70px;
+}
+
+.projets{
+    text-align: center;
+}
+
+.projets>img{
+    margin-top: 50px;
+    width: 150px;
+}
+
+.logo{
+    margin-top: 50px;
+}
 
 
 
