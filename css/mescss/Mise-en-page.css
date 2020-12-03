@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    color: #f2f2f2;
 }
 
 /*Header*/
@@ -8,23 +9,31 @@ body {
 body>header>h1 {
     text-align: center;
     color: #f2f2f2;
+    position: relative;
+    top: -10px;
 }
 
 body>header>img {
-    position: absolute;
+    position: relative;
     width: 70px;
     height: 50px;
-    top: 10px;
+    top: -75px;
 }
 
 body>header{
     background-color: #22465D;
+    width: 100%;
     height: 60px;
-    position: relative;
-    top: -22px;
+    top: 0px;
+    position: fixed;
+    z-index: 2;
 }
 
 /*accueil*/
+
+main{
+    margin-top: 100px;
+}
 
 main>h1 {
     color: #f2f2f2;
@@ -37,7 +46,7 @@ main>h1 {
 
 main>h1>span {
     position: relative;
-    top: 30px;
+    top: 50px;
     margin-right: auto;
 }
 
@@ -66,8 +75,6 @@ main>img {
 
 }
 
-
-
 .presentation>p {
     text-align: center;
     position: relative;
@@ -94,11 +101,11 @@ main>img {
     padding-bottom: 40px;
 }
 
-.articles>li>a>img{
+.histoire>li>a>img,.probleme>li>a>img,.solution>li>a>img{
     width: 150px;
 }
 
-.articles>li{
+.histoire>li,.probleme>li,.solution>li{
     list-style: none;
 }
 
@@ -107,13 +114,15 @@ p>a {
     color: black;
 }
 
-.articles{
+.histoire,.probleme,.solution{
     text-align: center;
     width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    background-color: rgba(8,27,38,0.7);
 }
+
 
 .articles>img {
     display: block;
@@ -128,26 +137,59 @@ p>a {
 #fin {
     text-align: center;
     margin-top: 100px;
+    display: block;
+    position: relative;
+    bottom: -70px;
 }
 
-.article1,.article2,.article3,.galerie,.propos,.autres{
-    background-image: url("../../img/Web 1920 – 1.png");
+.fin{
+    width:90px;
+    height:90px;
+    background: #567D8C;
+    opacity: 0.3;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    -o-border-radius:100px;
+    border-radius:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
-.index{
-    background-image: url("../../img/Accueil – 1.png");
+.article1,.article2,.article3,.galerie,.propos,.autres,.index{
+    background-image: url("../../img/pagesfond3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*.index{
+    background-image: url("../../img/pagesfond3.png");
     background-repeat: no-repeat;
     background-position: center top;
-}
+}*/
 
 .article1>p>strong>a,.article2>p>strong>a,.article3>p>strong>a{
     text-decoration: none;
-    color: #081B26;
+    color: #567D8C;
 }
 
 .article1>p>strong>a:hover,.article2>p>strong>a:hover,.article3>p>strong>a:hover{
     background-color: #22465D;
 }
+
+#chapeau{
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: justify;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 
 /*footer*/
 
@@ -195,7 +237,7 @@ footer>div>div>p>a:hover{
     background-color: gray;
 }
 
-/*Article*/
+/*Articles*/
 
 .article1>h1, .article2>h1, .article3>h1 {
     text-align: center;
@@ -224,12 +266,13 @@ figcaption {
     text-align: center;
 }
 
-.article1>p, .article2>p, .article3>p{
+.article1>p, .article2>p, .article3>p, h3{
     text-align: justify;
     width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    hyphens: auto;
 }
 
 blockquote {
@@ -241,9 +284,11 @@ blockquote {
     width: 300px;
 }
 
+
+
 /* boutons */
 
-.boutonA2,.boutonA3,.boutonfin, {
+.boutonA2,.boutonA3,.boutonfin{
     padding: 15px 25px;
     font-size: 10px;
     border-radius: 12px;
@@ -263,7 +308,7 @@ blockquote {
 }
 
 
-.bouton-accueil,.boutonA1,.boutonA23 {
+.bouton-accueil,.boutonA1,.boutonA23{
     padding: 15px 25px;
     font-size: 10px;
     border-radius: 12px;
@@ -317,7 +362,7 @@ button:active{
 
 /*propos*/
 
-.propos>img {
+.propos>main>img {
     /*width: 120px;
     overflow:hidden;
     -webkit-border-radius:50px;
@@ -325,8 +370,8 @@ button:active{
     border-radius:50px;
     width:90px;
     height:90px;*/
-    width:200px;
-    border-radius:50%;
+    width:300px;
+    border-radius:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
