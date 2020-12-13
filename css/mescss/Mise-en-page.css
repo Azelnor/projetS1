@@ -92,7 +92,7 @@ main>img {
 
 
 .intro {
-    text-align: justify;
+    text-align: left;
     width: 80%;
     display: block;
     margin-right: auto;
@@ -267,12 +267,11 @@ figcaption {
 }
 
 .article1>p, .article2>p, .article3>p, h3{
-    text-align: justify;
+    text-align: left;
     width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    hyphens: auto;
 }
 
 blockquote {
@@ -285,6 +284,12 @@ blockquote {
 }
 
 
+.article3>video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
 
 /* boutons */
 
@@ -389,11 +394,21 @@ button:active{
 
 .galerie>h1 {
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .galerie>ul>li>img {
     max-width: 100%;
     height: auto;
+}
+
+.sources>li>a{
+    color: #f2f2f2;
+}
+
+.sources>li{
+    margin-bottom: 20px;
 }
 
 .galerie>ul {
